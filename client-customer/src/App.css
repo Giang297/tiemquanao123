@@ -1,0 +1,582 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.body-customer {
+  margin: 0 50px;
+}
+
+.body-admin {
+  width: fit-content;
+}
+
+div.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+figure.caption-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.align-center, .text-center {
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+span.link {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* menu.css */
+.logo {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+}
+
+div.border-bottom {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+div.float-left {
+  float: left;
+}
+
+div.float-right {
+  float: right;
+}
+
+div.float-clear {
+  clear: both;
+}
+
+/* menu.css */
+
+/* Menu */
+ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+li.menu {
+  margin-right: 20px;
+  text-transform: uppercase;
+  line-height: 60px;
+  transition: color 0.3s;
+  cursor: pointer;
+  font-weight: bold; /* Add some weight to the font */
+  color: #333; /* Default text color */
+}
+
+li.menu:hover {
+  color: #007bff;
+  transform: scale(1.1); /* Scale the item on hover */
+}
+
+/* Search Form */
+form.search {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+input.keyword {
+  width: 150px;
+  padding: 8px; /* Increase padding for better appearance */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input.keyword:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box-shadow on focus */
+}
+
+/* Search Button */
+button.search-btn {
+  padding: 8px 15px; /* Adjust padding for better appearance */
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+button.search-btn:hover {
+  background-color: #0056b3;
+  color: #ffeb3b; /* Change text color on hover */
+  transform: scale(1.1); /* Scale the button on hover */
+}
+
+
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:first-child.datatable {
+  background-color: #007bff;
+  color: #fff;
+}
+
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
+
+.align-center button {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  transform: translateY(-50%);
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+.align-center table {
+  margin: 0 auto;
+  text-align: center;
+  width: 150px;
+}
+
+.align-center table td {
+  padding: 10px;
+  vertical-align: middle;
+  width: 150px;
+}
+
+.align-center input[type="text"],/* Add this to styles.css */
+
+/* Hover effect for product items */
+div.inline:hover {
+  transform: scale(1.05); /* Scale the product item on hover */
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+figure:hover {
+  background-color: #f5f5f5; /* Change background color on hover */
+}
+
+figcaption:hover {
+  color: #007bff; /* Change text color on hover */
+}
+
+.align-center input[type="password"],
+.align-center input[type="submit"] {
+  margin: 5px 0;
+}
+
+.banner-container {
+  position: relative;
+  text-align: center;
+  height: 500px;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  transform: translateY(-50%);
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+.centered-content img {
+  display: block;
+  margin: 0 auto;
+}
+/* Thêm vào cuối file styles.css */
+
+.product-detail-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+
+.product-detail-container figure {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-detail-container img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.product-detail-container table {
+  width: 100%;
+}
+
+.product-detail-container td {
+  padding: 10px;
+}
+
+.product-detail-container input,
+.product-detail-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.product-detail-container input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.product-detail-container input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Hiệu ứng hover cho nút "ADD TO CART" */
+.product-detail-container input[type="submit"]:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Hiệu ứng hover cho input số */
+.product-detail-container input[type="number"]:hover {
+  border: 1px solid #007bff;
+}
+
+/* Hiệu ứng focus cho input số */
+.product-detail-container input[type="number"]:focus {
+  outline: none;
+  border: 1px solid #007bff;
+}
+
+/* Hiệu ứng hover cho table td */
+.product-detail-container table td:hover {
+  background-color: #f5f5f5;
+}
+/* Thêm vào cuối file styles.css */
+
+/* Hiệu ứng cho nút login, signup và mycart */
+.btn-login,
+.btn-signup,
+.btn-mycart {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; /* Loại bỏ gạch chân mặc định cho liên kết */
+  display: inline-block;
+  transition: background-color 0.3s; /* Hiệu ứng màu sắc nền */
+}
+
+.btn-login:hover,
+.btn-signup:hover,
+.btn-mycart:hover {
+  background-color: #0056b3;
+}
+
+
+/* Thêm vào cuối file styles.css */
+
+/* Set styles for custom input elements */
+.custom-input {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left; /* Align text to the left */
+}
+
+/* Set styles for custom submit button */
+.custom-button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Thêm vào cuối file styles.css */
+
+/* Menu */
+ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+li.menu {
+  margin-right: 20px;
+  text-transform: uppercase;
+  line-height: 60px;
+  transition: color 0.3s, transform 0.3s; /* Thêm hiệu ứng transform */
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+
+li.menu:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+/* Search Form */
+form.search {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+input.keyword {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input.keyword:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Search Button */
+button.search-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+button.search-btn:hover {
+  background-color: #0056b3;
+  color: #ffeb3b;
+  transform: scale(1.1);
+}
+
+/* Hiệu ứng hover cho nút "ADD TO CART" */
+.product-detail-container input[type="submit"]:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Hiệu ứng hover cho input số */
+.product-detail-container input[type="number"]:hover {
+  border: 1px solid #007bff;
+}
+
+/* Hiệu ứng focus cho input số */
+.product-detail-container input[type="number"]:focus {
+  outline: none;
+  border: 1px solid #007bff;
+}
+
+/* Hiệu ứng hover cho table td */
+.product-detail-container table td:hover {
+  background-color: #f5f5f5;
+}
+
+/* Hiệu ứng cho nút login, signup và mycart */
+.btn-login,
+.btn-signup,
+.btn-mycart {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.btn-login:hover,
+.btn-signup:hover,
+.btn-mycart:hover {
+  background-color: #0056b3;
+}
+
+/* Hiệu ứng cho nút logout, myprofile và myorders */
+.btn-logout,
+.btn-profile,
+.btn-myorders {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.btn-logout:hover,
+.btn-profile:hover,
+.btn-myorders:hover {
+  background-color: #0056b3;
+}
+/* styles.css hoặc tạo một file CSS riêng để import vào Myprofile */
+
+.myprofile-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.myprofile-header {
+  color: #333;
+}
+
+.myprofile-form {
+  margin-top: 20px;
+}
+
+.myprofile-form table {
+  width: 100%;
+}
+
+.myprofile-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.myprofile-form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.myprofile-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styling for images */
+.myprofile-container img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.myprofile-form img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+

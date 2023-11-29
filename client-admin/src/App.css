@@ -1,0 +1,589 @@
+/* styles.css */
+.body-customer {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.body-admin {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+div.inline {
+  display: inline-block;
+}
+
+.align-center,
+.text-center {
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+  text-align: center;
+}
+
+span.link {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* menu.css */
+div.border-bottom {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+div.float-left,
+div.float-right {
+  float: left;
+}
+
+div.float-clear {
+  clear: both;
+}
+
+/* Thêm vào cuối file styles.css hoặc tạo một file CSS riêng để import vào component Menu */
+
+/* Điều chỉnh style cho menu */
+ul.menu,
+span.logout-link {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.menu,
+span.logout-link {
+  margin-right: 20px;
+  text-transform: uppercase;
+  line-height: 60px;
+  transition: color 0.3s, background-color 0.3s; /* Thêm hiệu ứng transition */
+}
+
+li.menu:hover,
+span.logout-link:hover a {
+  color: #007bff; /* Màu chữ khi hover */
+  background-color: #f8f8f8; /* Màu nền khi hover */
+}
+
+span.logout-link a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: auto;
+  transition: color 0.3s;
+}
+
+/* Điều chỉnh style cho nút "Logout" */
+span.logout-link {
+  display: inline-block;
+  line-height: 60px;
+}
+
+span.logout-link b,
+span.logout-link a {
+  vertical-align: middle;
+}
+
+/* Điều chỉnh style cho nút "Active" */
+li.menu.active a,
+li.menu.home a,
+li.menu.login a {
+  color: #007bff;
+}
+
+/* Hover cho toàn bộ nút trong menu */
+li.menu:hover a,
+span.logout-link:hover a,
+li.menu.active a:hover,
+li.menu.home a:hover,
+li.menu.login a:hover {
+  color: #0056b3; /* Màu chữ khi hover */
+}
+
+/* Thêm vào cuối file styles.css hoặc tạo một file CSS riêng để import vào component Menu */
+
+/* Thêm vào cuối file styles.css hoặc tạo một file CSS riêng để import vào component Menu */
+
+/* Hover cho toàn bộ nút trong menu */
+li.menu:hover a,
+span.logout-link:hover a,
+li.menu.active a:hover,
+li.menu.home a:hover,
+li.menu.login a:hover {
+  color: #0056b3; /* Màu khi hover */
+}
+
+/* Thêm vào cuối file styles.css hoặc tạo một file CSS riêng để import vào component Menu */
+
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* header */
+tr:first-child.datatable {
+  background-color: #ffcc00;
+}
+
+/* even rows, except header */
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+
+/* odd rows, except header */
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+
+/* except header */
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
+
+/* Additional adjustments for better styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.body-customer {
+  height: fit-content;
+  margin: 0 50px;
+}
+
+.body-admin {
+  width: fit-content;
+}
+
+div.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+figure.caption-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.align-center, .text-center {
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+span.link {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* menu.css */
+.logo {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+}
+
+div.border-bottom {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+div.float-left {
+  float: left;
+}
+
+div.float-right {
+  float: right;
+}
+
+div.float-clear {
+  clear: both;
+}
+
+/* menu.css */
+
+/* Thêm đoạn mã sau vào cuối file styles.css */
+
+span.logout-link a {
+  margin-left: auto;
+}
+
+/* Thêm đoạn mã sau vào cuối file styles.css */
+
+span.logout-link {
+  display: inline-block;
+  line-height: 60px;
+}
+
+span.logout-link b,
+span.logout-link a {
+  vertical-align: middle;
+}
+
+/* Thêm đoạn mã sau vào cuối file styles.css */
+.imglogin {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imglogin img {
+  max-width: 50px;
+  height: 50px;
+}
+
+/* Thêm vào cuối file styles.css */
+
+.product-detail-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.product-detail-container h2 {
+  color: #333;
+}
+
+.product-detail-container form {
+  margin-top: 20px;
+}
+
+.product-detail-container table {
+  width: 100%;
+}
+
+.product-detail-container td {
+  padding: 10px;
+}
+
+.product-detail-container input,
+.product-detail-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.product-detail-container img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.product-detail-container input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.product-detail-container input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Tùy chỉnh thêm nếu cần */
+
+/* Điều chỉnh trang admin login */
+.align-valign-center form {
+  text-align: center;
+}
+
+.align-valign-center input[type="submit"] {
+  margin-top: 10px;
+}
+
+.align-valign-center img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.align-valign-center form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Thêm vào cuối file styles.css hoặc tạo một file CSS riêng để import vào component Login */
+
+/* Điều chỉnh style cho input */
+.align-valign-center input[type="text"],
+.align-valign-center input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Điều chỉnh style cho nút "Login" */
+.align-valign-center input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.align-valign-center input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Điều chỉnh style cho font chữ trong form */
+.align-valign-center form {
+  font-size: 16px;
+}
+
+/* Điều chỉnh style cho font chữ trong table */
+.align-valign-center table {
+  font-size: 16px;
+}
+
+/* Điều chỉnh style cho font chữ trong h2 */
+.align-valign-center h2 {
+  font-size: 24px;
+}
+
+/* Điều chỉnh style cho font chữ của thông báo lỗi */
+.align-valign-center .error-message {
+  color: red;
+  margin-top: 10px;
+}
+/* Thêm vào cuối file styles.css hoặc tạo một file CSS riêng để import vào component Category */
+
+/* Điều chỉnh style cho Category */
+.category-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-list {
+  flex: 1;
+  max-width: 60%;
+}
+
+.category-list h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.datatable th,
+.datatable td {
+  padding: 12px;
+}
+
+/* Highlight the header */
+.datatable th {
+  background-color: #ffcc00;
+}
+
+/* Alternating row colors */
+.datatable tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.datatable tr:nth-child(odd) {
+  background-color: #ffeeaa;
+}
+
+/* Hover effect for rows */
+.datatable tr:hover {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
+
+/* Adjustments for better styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Clear floats after the category list and details */
+.category-clear {
+  clear: both;
+}
+
+/* Additional adjustments for responsive design */
+@media only screen and (max-width: 768px) {
+  .category-container {
+    flex-direction: column;
+  }
+
+  .category-list {
+    max-width: 100%;
+  }
+}
+
+/* Thêm vào cuối file styles.css hoặc tạo một file CSS riêng để import vào component Category */
+/* Thêm vào cuối file styles.css hoặc tạo một file CSS riêng để import vào component CategoryDetail */
+
+/* Điều chỉnh style cho CategoryDetail */
+.float-right {
+  max-width: 40%;
+  margin-left: 20px; /* Tạo khoảng cách với phần Category List */
+}
+
+.text-center {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  padding: 10px;
+}
+
+/* Container cho các nút */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+}
+
+/* Style input buttons */
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Khoảng cách giữa các nút */
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Tùy chỉnh thêm nếu cần */
+
+/* Thêm vào cuối file styles.css hoặc tạo một file CSS riêng để import vào component CategoryDetail */
+/* Thêm vào cuối file styles.css hoặc tạo một file CSS riêng để import vào component Active */
+
+/* Điều chỉnh style cho Active */
+.align-center {
+  width: 100%;
+  text-align: center;
+}
+
+.text-center {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  padding: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Style nút ACTIVE */
+input[type="submit"] {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Tùy chỉnh thêm nếu cần */
+
+/* Thêm vào cuối file styles.css hoặc tạo một file CSS riêng để import vào component Active */
